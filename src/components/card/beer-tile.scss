@@ -1,0 +1,52 @@
+@import "../../assets/sass/variables";
+@import "../../assets/sass/typography";
+
+.container {
+
+  
+  align-content: center;
+  text-align: center;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: $primary-color;
+  margin: 4%;
+  padding: 1%;
+  border: 3px black;
+  border-radius: 3%;
+  height: 50%;
+
+
+&__beerTiles {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: $secondary-color;
+    border-radius: 15%;
+    height: 100x;
+    border: 2px solid, black;
+    align-content: center;
+
+    &__beerTile__title{
+        font: $primary-font;
+        color: $primary-color;
+        }
+    }
+}
+section {
+    background-color: $secondary-color;
+    padding: 40px;
+    margin:25px;
+    border-radius: 5%;
+    border: 3px solid $border-color;
+    min-width: 300px;
+}
+
+img {
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 30%;
+    height: 400px;
+
+}

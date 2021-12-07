@@ -1,0 +1,53 @@
+@use "./assets/sass/_variables.scss" as *;
+@use "./assets/sass/_typography" as *;
+.app {
+      text-align: center;
+      font-family: sans-serif;
+      background-color: $tertiary-color;
+  
+
+@media screen and (min-width: 990px) {
+  .app {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+ }
+}
+html {
+    background-color: $tertiary-color;
+}
+header {
+    display: Flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font: $primary-font;
+    padding: 40px;
+    color: $primary-color
+    }
+
+.banner {
+        display: Flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        background-color: $primary-color;
+        margin: 30px;
+        margin-left: 35%;
+        margin-right: 35%;
+        border: 3px, solid, $border-color;
+        border-radius: 5%;
+    }
+
+    h2 {
+        display: Flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: $secondary-color;
+}
+
+    .brewdogCards {
+    max-height: 100px;
+    }
