@@ -1,0 +1,9 @@
+.beerCard__image {
+    height: 150px;
+  }
+  
+  @media screen and (min-width: 720px) {
+    .beerCard__image {
+      height: 180px;
+    }
+  }

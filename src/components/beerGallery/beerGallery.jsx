@@ -1,26 +1,32 @@
 import React  from 'react';
-import './beer-tile.scss';
+import BeerCard from "../beerCard/beerCard";
+import './beerGallery.scss';
 
 
-const BeerTile = (props) => {
-    const {title, brewdogArr} = props;
-    const brewdogCards = brewdogArr.map((beers, index) => {
-        return (
-          <section key={title + index} className="beerTile">
-              <h4 className="beerTile__title"> {beers.name}</h4>
-              <img className="beerTile__image" src={beers.image_url} alt={props.title}/>
-              <h4 className="beerTile__tagline">{beers.tagline}</h4>
-          </section>
-        )
-      })
+const BeerGallery = (props) => {
+    const { brewdogArr } = props;
+    const brewdogCards = brewdogArr.map((beer, index) => {
+        
     return (
-
-        <div className="container">
-            {brewdogCards}
+       <div key={"beer" + index }className="beerGallery">
+          <BeerCard
+              image={beer.image_url}
+              title={beer.name}
+              tagLine={beer.tagline}
+              date={beer.first_brewed}
+              ph={beer.ph}
+              abv={beer.abv}  />
         </div>
-      )
-    };
-export default BeerTile;
+       )
+    });
+
+    return (
+        <div className="beerGallery">{brewdogCards}</div>
+    )};
+
+export default BeerGallery;
+
+
 
 /* gline} text={beers.description}
 const BeerTile = (props) => {

@@ -1,4 +1,55 @@
-$primary-font: 'Raleway', sans-serif;
+@import './variables';
 
-$text-font: 'Overlock', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Overlock&family=Raleway:wght@300;900&display=swap');
+
+* {
+  $primary-font: 'Raleway', sans-serif;
+    $text-font: 'Overlock', cursive;
     
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $text-light-high;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $text-light-high;
+  text-align: center;
+}
+
+h3 {
+  color: $text-dark-high;
+}
+
+h4 {
+  color: $text-dark-high;
+  font-size: 14px;
+}
+
+p {
+  color: $text-dark-med;
+  font-size: 14px;
+}
+
+span {
+  color: $text-dark-med;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 8vw;
+  }
+  h2, svg {
+    font-size: 4vw;
+  }
+}
+
