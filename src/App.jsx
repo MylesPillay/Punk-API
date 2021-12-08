@@ -1,10 +1,12 @@
 import './App.scss';
+import NavSideBar from "./components/nav"
 import beers from './data/beers';
-import BeerTile from "./components/card/beer-tile"
+import BeerTile from "./components/card/beerCard"
 
-function App () {
+const App = () => { 
   return ( 
      <div className="App">
+       <NavSideBar/>
       <header className="App-header"> Punks For API's
       </header>
      <main>
