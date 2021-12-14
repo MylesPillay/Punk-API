@@ -1,4 +1,5 @@
-@import './variables';
+
+;
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
@@ -14,33 +15,33 @@ h1 {
   font-size: 4rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: $text-light-high;
+  color: $primary-color;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: $text-light-high;
+  color: $primary-color;
   text-align: center;
 }
 
 h3 {
-  color: $text-dark-high;
+  color: black;
 }
 
 h4 {
-  color: $text-dark-high;
+  color: black;
   font-size: 14px;
 }
 
 p {
-  color: $text-dark-med;
+  color: black;
   font-size: 14px;
 }
 
 span {
-  color: $text-dark-med;
+  color: black;
   font-size: 14px;
 }
 
