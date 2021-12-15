@@ -1,5 +1,6 @@
 import React from "react";
 import FilteredBrewdogProducts from "../Filter/Filter";
+import "./FilteredItem.scss";
 
 const Filter = ({onChange}) => {
 
