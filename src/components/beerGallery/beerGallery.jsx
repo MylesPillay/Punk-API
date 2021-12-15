@@ -1,67 +1,31 @@
 import React  from 'react';
-import BeerCard from "../beerCard/beerCard";
+import BeerCard from "../card/beerCard";
 import './beerGallery.scss';
 
-
 const BeerGallery = (props) => {
-    const { brewdogArr } = props;
-    const brewdogCards = brewdogArr.map((beer, index) => {
+   const {beerArr} = props;
+
+    const beerCardJSX = beerArr.map((beer) => {
         
-    return (
-       <div key={"beer" + index }className="beerGallery">
-          <BeerCard
+    return (<BeerCard 
+              key={beer.id}
               image={beer.image_url}
               title={beer.name}
               tagLine={beer.tagline}
               date={beer.first_brewed}
               ph={beer.ph}
-              abv={beer.abv}  />
-        </div>
-       )
-    });
+              abv={beer.abv}  
+              ibu={beer.ibu} 
+              ebc={beer.ebc}
+              description={beer.description} 
+              foodPairing={beer.food_pairing}/> )});
 
     return (
-        <div className="beerGallery">{brewdogCards}</div>
-    )};
+        <div className="beerGallery">
+            {beerArr.length > 0 ? beerCardJSX : <p className="beerGallery__heading"> please broaden your search criteria </p>}
+        </div>
+    )
+}
 
 export default BeerGallery;
 
-
-
-/* gline} text={beers.description}
-const BeerTile = (props) => {
-  const { imgSRC, title, brief, text } = props
-  const [showMore, setShowMore] = useState(false);
-
-  const handleClick =() => {
-      setShowMore(!showMore);
-  };
-
-  const beerCardJSX = (
-
-      <div className="beer-card__content" onClick={handleClick}>
-         <h3 className="beer-card__heading">{title}</h3>
-         <p>{brief}</p>
-
-      </div>
-     );
-
-   const beerCardTextJSX = (
-
-    <div className="beer-card__content" onClick={handleClick}>
-        <h3 className="beer-card__heading">{title}</h3>
-
-        <p className="beer-card__text"> {text} </p>
-    </div>
-   );
-
-    return (
-        <div className="beer-card">
-        <img className="beer-card__image" src={imgSRC} alt={props.title}/>
-        {showMore ? beerCardTextJSX : beerCardJSX}
-        </div>
-  );
-};
-
-export default BeerTile;
-*/

@@ -1,0 +1,38 @@
+@use "../../assets/sass/_variables.scss" as *;
+@use "../../assets/sass/_typography.scss";
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  color: $secondary-color;
+  background-color: $tertiary-color;
+  font-family: "Overlock";
+  padding: 2rem;
+  margin-bottom: 1rem;
+  
+  .navbar__heading {
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $quarternary-color;
+    font-size:1.5rem;
+  
+  .navbar__label {
+    display: block;
+    margin-bottom: 0.3rem;
+    &:last-child {
+      display: inline;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+    .navbar{
+      box-shadow: none;
+      padding-top: 1.5rem;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      margin-left: 1rem;
+      border-radius: 1em;
+      width: 16%;
+    }
+  }

@@ -1,0 +1,5 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.main {
+  border-left: 10px solid $tertiary-color;
+}

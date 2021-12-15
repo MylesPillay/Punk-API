@@ -1,53 +1,55 @@
-@use "./assets/sass/_variables.scss" as *;
-@use "./assets/sass/_typography" as *;
-.app {
-      text-align: center;
-      font-family: sans-serif;
-      background-color: $tertiary-color;
-  
+@use "./assets/sass/_variables" as *;
+@use "./assets/sass/_typography";
 
-@media screen and (min-width: 990px) {
-  .app {
-    max-width: 1200px;
-    margin: 0 auto;
-    
+
+.App {
+      text-align: center;
+      background-color: $tertiary-color;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
- }
-}
+
 html {
     background-color: $tertiary-color;
 }
-header {
-    display: Flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 70px;
-    font: $primary-font;
-    padding: 40px;
-    color: $primary-color
+&__header {
+    font-size: 4.0rem;
+    color: $primary-color;
+    font-family: sans-serif;
     }
-
-.banner {
+}
+.header {
         display: Flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        
         padding: 15px;
         background-color: $primary-color;
-        margin: 30px;
-        margin-left: 35%;
-        margin-right: 35%;
+        margin: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
         border: 3px, solid, $border-color;
         border-radius: 5%;
     }
+    .header__logo {
+        height: 100px;
+        width: 150px;
+    }
 
-    h2 {
+    .header__title {
         display: Flex;
         align-items: center;
         justify-content: center;
-        font-size: 30px;
+        font-size: 50px;
         color: $secondary-color;
 }
 
-    .brewdogCards {
-    max-height: 100px;
+
+@media screen and (min-width: 720px) {
+    .App-main {
+        display:flex;
+        }
     }
