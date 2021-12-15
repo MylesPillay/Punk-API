@@ -1,20 +1,20 @@
 @import '../../assets/sass/variables';
 
 .beerCard {
-  width: 200px;
-  height:430px;
-  display: flex;
-  flex-direction: row;
+  width: 180px;
+  height:400px;
+  display: grid;
+  grid-row: repeat (5 1fr);
+  grid-column: repeat (2 1fr);
   align-items: center;
   padding: 1rem;
-  background-color: $secondary-color;
+  background-color: $quinary-color;
   border-radius: 5px;
   justify-content: center;
 }
 
 .beerCard__image {
   display: flex;
-  flex-direction: column;
   align-items: center;
     height: 180px;
     padding: 0.5rem 0;

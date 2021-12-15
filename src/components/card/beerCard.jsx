@@ -46,6 +46,7 @@ const BeerCard = (props) => {
     return (
       <div classNAme="beerCard" onClick={handleClick}>
          {expandInfo ? expandInfoJSX : beerCardJSX}
+         {expandInfoJSX ? expandInfo: beerCardJSX}
          </div>
     )
 }
