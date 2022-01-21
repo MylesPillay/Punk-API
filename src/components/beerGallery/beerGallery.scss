@@ -1,7 +1,7 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 @media screen and (min-width: 961px) {
-.cardlist {
+.beerGallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1rem;

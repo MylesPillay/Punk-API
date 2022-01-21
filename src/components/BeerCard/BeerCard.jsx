@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./BeerCard.scss";
 
-const BeerCard = ({image, title, tagLine, date, ph, abv, ibu, ebc, description, foodPairing}) => {
+const BeerCard = ({picture, name, tagLine, date, ph, abv, ibu, ebc, description, foodPairing}) => {
   const [expandInfo, setExpandInfo] = useState(false);
 
-  //flipcard utilising handleClick
 
   const handleClick = () => {
     setExpandInfo(!expandInfo)
@@ -13,15 +12,19 @@ const BeerCard = ({image, title, tagLine, date, ph, abv, ibu, ebc, description, 
   const beerCardJSX = (
 
     <> 
-      <img className="beerCard__image" src={image} alt="beer" />
-      <h2 className="beerCard__title">{title}</h2>
+    <div className="beerCard__container">
+      <img className="beerCard__picture" src={picture} alt={name} />
+      <h2 className="name">{name}</h2>
       <h3 className="beerCard__tagLine">{tagLine}</h3>
-      <p className="beerCard__date">{date}</p>
-      <p className="beerCard__abv">ABV: {abv}</p>
-      <p className="beerCard__ph">pH: {ph}</p>
-      <p className="beerCard__info">{abv}%</p>
-      <p className="beerCard__info">{ibu}</p>
-      <p className="beerCard__info">{ebc}</p>
+      <div className="beerCard__data"></div>
+        <p className="beerCard__date">{date}</p>
+        <p className="beerCard__abv">ABV: {abv}</p>
+        <p className="beerCard__ph">pH: {ph}</p>
+        <p className="beerCard__info">{abv}%</p>
+        <p className="beerCard__info">{ibu}</p>
+        <p className="beerCard__info">{ebc}</p>
+    </div>
+
     </>
   );
 
@@ -37,16 +40,16 @@ const BeerCard = ({image, title, tagLine, date, ph, abv, ibu, ebc, description, 
           })}
         </ul>
 
-        <h3 className="beerCard__desc-title">Description:</h3>
-        <p className="cbeerCard__desc-text">{description}</p>
+        <h3 className="beerCard__description-title">Description:</h3>
+        <p className="cbeerCard__description-text">{description}</p>
       </div>
-    );
-    return (
-      <div classNAme="beerCard" onClick={handleClick}>
+    )
+        
+  return (
+      <div className="beerCard" onClick={handleClick}>
          {expandInfo ? expandInfoJSX : beerCardJSX}
          {expandInfoJSX ? expandInfo: beerCardJSX}
          </div>
-    )
-}
-
+    );
+  };
 export default BeerCard;
