@@ -1,5 +1,5 @@
 import React from "react";
-import BeerGallery from "../../components/beerGallery/beerGallery";
+import BeerGallery from "../../components/BeerGallery/BeerGallery";
 import "./main.scss";
 
 const Main = (props) => {

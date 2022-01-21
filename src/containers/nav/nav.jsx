@@ -1,6 +1,6 @@
 import React from "react";
 import "./nav.scss";
-import Search from "../../components/search/search";
+import SearchBox from "../../components/SearchBox/SearchBox";
 import FilterBox from "../FilterBox/FilterBox";
 
 // props now to be {searchTerm, handleInput, handleChange}//
@@ -13,7 +13,7 @@ const NavSideBar = ({searchTerm, handleInput, filterFunction}) => {
       <nav>
           <h2 className="navbar__heading">Peruse the Brews</h2>
           
-          <Search placeholder="Search by product name" 
+          <SearchBox placeholder="Search by product name" 
            searchTerm={searchTerm}  handleInput={handleInput}/>
 
         <section className="nav-bar__filter-boxes">

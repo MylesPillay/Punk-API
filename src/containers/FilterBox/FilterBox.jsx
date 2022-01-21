@@ -1,5 +1,5 @@
 import React from "react";
-import "./FilteredBox.scss";
+import "./FilterBox.scss";
 
 const FilterBox = (props, index) => {
  const {filterLabel, filterBox, name} = props

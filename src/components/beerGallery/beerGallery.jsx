@@ -1,6 +1,6 @@
 import React  from 'react';
-import BeerCard from "../BeerCard/beerCard";
-import './beerGallery.scss';
+import BeerCard from "../BeerCard/BeerCard";
+import './BeerGallery.scss';
 
 const BeerGallery = ({beerArr}) => {
 

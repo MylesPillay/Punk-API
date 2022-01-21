@@ -1,14 +1,12 @@
-import React, {useState} from "react";
-import "./beerCard.scss";
+import React, { useState } from "react";
+import "./BeerCard.scss";
 
-const BeerCard = (props) => {
-  const {image, title, tagLine, date, ph, abv, ibu, ebc, description, foodPairing} = props;
-
+const BeerCard = ({image, title, tagLine, date, ph, abv, ibu, ebc, description, foodPairing}) => {
   const [expandInfo, setExpandInfo] = useState(false);
 
   //flipcard utilising handleClick
 
-  const handleClick=() => {
+  const handleClick = () => {
     setExpandInfo(!expandInfo)
   }
 
