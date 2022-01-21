@@ -1,5 +1,15 @@
 @use "../../assets/sass/_variables.scss" as *;
 
+.beerGallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 75%;
+  align-content: right;
+  margin-left: 10rem;
+}
+
 @media screen and (min-width: 961px) {
 .beerGallery {
     display: grid;

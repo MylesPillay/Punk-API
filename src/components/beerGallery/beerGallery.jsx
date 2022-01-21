@@ -2,9 +2,9 @@ import React  from 'react';
 import BeerCard from "../BeerCard/BeerCard";
 import './BeerGallery.scss';
 
-const BeerGallery = ({beerArr}) => {
+const BeerGallery = ({BeerArr}) => {
 
-    const BeerGallerys = beerArr.map((beer, index) => {
+    const BeerGallerys = BeerArr.map((beer, index) => {
         
     return (
         <BeerCard 

@@ -1,11 +1,55 @@
 @use "./assets/sass/_variables.scss" as *;
 @use "./assets/sass/_typography.scss" as *;
 
-.punk--title {
-    text-align: center;
-    padding: 0.5rem;
-    background-color: $secondary-color;
-    color: $primary-color;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.app{
+    &__container {
+    display: block;
+    }
+    &__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &__title{
+            text-align: center;
+            padding: 0.5rem;
+            background-color: $secondary-color;
+            color: $primary-color;
+            }
+        &__logo { 
+            justify-content: left;
+            }
+        }
+    &__main {
+        display: flex;
+        flex-direction: row;
+        &--nav-sidebar{
+
+        }
+    }
+
+
+.main {
+    display: inline-flex;
+    flex-direction: column;
+    &__nav-sidebar{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        width: 25%;
+    }
+    &__beer-gallery {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        width: 25%;
+    }
+
 }
 
 @media screen and (min-width: 961px) {
@@ -17,4 +61,5 @@
         display: flex;
         flex-direction: row;
     }
+}
 }

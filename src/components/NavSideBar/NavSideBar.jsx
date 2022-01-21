@@ -1,6 +1,6 @@
 import React from "react";
-import "./nav.scss";
-import SearchBox from "../../components/SearchBox/SearchBox";
+import "./NavSideBar.scss";
+import SearchBox from "../SearchBox/SearchBox";
 import FilterBox from "../FilterBox/FilterBox";
 
 // props now to be {searchTerm, handleInput, handleChange}//

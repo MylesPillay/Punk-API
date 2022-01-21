@@ -13,7 +13,7 @@ h1 {
   font-size: 4rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: #FFEFD6;
+  color: #ebcc9c;
 }
 
 h2 {
@@ -25,14 +25,12 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    font-weight: 600;
     color: #FFEFD6;
     text-align: center;
 }
 
 h3 {
     display: block;
-    color: black;
     font-size: 1.17em;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -47,8 +45,13 @@ h4 {
 }
 
 p {
-  color: black;
-  font-size: 14px;
+  display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 span {

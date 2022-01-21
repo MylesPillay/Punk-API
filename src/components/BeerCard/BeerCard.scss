@@ -1,25 +1,27 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .beerCard {
+  padding: 1rem;
 &__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2rem;
   box-shadow: 0rem 0rem 0.5rem 0.5rem $tertiary-color;
   padding: 1rem;
   cursor: pointer;
-  width: 5rem;
+}
    &__tile {
-    .card__front {
-      display: flex;
-      flex-direction: column;
+     justify-content: center;
       align-items: center;
       padding: 0.5rem;
+      grid-gap: 0.5rem;
       gap: 0.5rem;
+     }
+    
     &__picture {
       width: 1.5rem;
-
+      
+    }
     &__data {
       display: flex;
       flex-direction: row;
@@ -36,15 +38,13 @@
             }
           }
         }
-      }
+  .data {
+    padding: 0.5rem;
     }
-  }
-}
 @media screen and (min-width: 961px) {
   .card__container:hover {
     background-color: $primary-color;
   }
-
   .card__container {
     height: 15rem;
   }
