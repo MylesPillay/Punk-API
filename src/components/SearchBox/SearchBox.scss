@@ -1,0 +1,14 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.searchbox--input {
+  padding: 1rem;
+  width: 15rem;
+  margin-top: 1rem;
+  border: 1px solid $secondary-color;
+}
+
+@media screen and (min-width: 961px) {
+  .searchbox--input {
+    margin: 1rem;
+  }
+}

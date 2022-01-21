@@ -3,10 +3,9 @@
 .beerCard {
   width: 180px;
   height:400px;
-  display: grid;
-  grid-row: repeat (5 1fr);
-  grid-column: repeat (2 1fr);
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 1rem;
   background-color: $quinary-color;
   border-radius: 5px;

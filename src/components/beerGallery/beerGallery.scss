@@ -1,34 +1,9 @@
-@import "../../assets/sass/variables";
-@import "../../assets/sass/typography";
+@use "../../assets/sass/_variables.scss" as *;
 
-.beerGallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center ;
-    margin-top: 2vh;
-    background-color: $tertiary-color;
-
-
-&__header {
-  color: $secondary-color;
-    border: 5px solid black;
-    border-radius: 20px;
-    padding: 5vh 5vh; 
-    height: 40vh;
-    margin: 20px 10px;
-    justify-content: center;
-    display: flex;
-    white-space: nowrap;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .cardlist {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+@media screen and (min-width: 961px) {
+.cardlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 1rem;
-    border-radius: 10px;
-    width: 100%;
   }
 }

@@ -4,6 +4,7 @@
 .navbar {
   display: flex;
   flex-direction: column;
+  width:20%;
   color: $secondary-color;
   background-color: $tertiary-color;
   font-family: "Overlock";
@@ -11,7 +12,6 @@
   margin-bottom: 1rem;
 
 
-  
   .navbar__heading {
     margin-top: 0;
     padding-bottom: 1rem;

@@ -1,5 +1,10 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  align-content: right;
   border-left: 10px solid $tertiary-color;
 }
