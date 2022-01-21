@@ -1,55 +1,20 @@
-@use "./assets/sass/_variables" as *;
-@use "./assets/sass/_typography";
+@use "./assets/sass/_variables.scss" as *;
+@use "./assets/sass/_typography.scss" as *;
 
-
-.App {
-      text-align: center;
-      background-color: $tertiary-color;
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-html {
-    background-color: $tertiary-color;
-}
-&__header {
-    font-size: 4.0rem;
-    color: #FFEFD6;
-    font-family: sans-serif;
-    }
-}
-.header {
-        display: Flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        padding: 15px;
-        background-color: #FFEFD6;
-        margin: 20px;
-        margin-left: 10%;
-        margin-right: 10%;
-        border: 3px, solid, $border-color;
-        border-radius: 5%;
-    }
-    .header__logo {
-        height: 100px;
-        width: 150px;
-    }
-
-    .header__title {
-        display: Flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 50px;
-        color: $secondary-color;
+.punk--title {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: $secondary-color;
+    color: $primary-color;
 }
 
-
-@media screen and (min-width: 720px) {
-    .App-main {
-        display:flex;
-        }
+@media screen and (min-width: 961px) {
+    .punk--title {
+        padding: 1.5rem;
     }
+
+    .punk__main {
+        display: flex;
+        flex-direction: row;
+    }
+}
