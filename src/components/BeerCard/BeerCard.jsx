@@ -17,27 +17,26 @@ const BeerCard = ({picture, name, tagLine, date, ph, abv, ibu, ebc, description,
         <h2 className="name">{name}</h2>
         <h3 className="beerCard__tagLine">{tagLine}</h3>
         <div className="beerCard__data">
-          <p className="beerCard__date">{date}</p>
-          <p className="beerCard__abv">ABV: {abv}</p>
-          <p className="beerCard__ph">pH: {ph}</p>
-          <p className="beerCard__info">{abv}%</p>
-          <p className="beerCard__info">{ibu}</p>
-          <p className="beerCard__info">{ebc}</p>
+          <p className="data__date">{date}</p>
+          <p className="data">ABV: {abv}</p>
+          <p className="data">pH: {ph}</p>
+          <p className="data">{abv}%</p>
+          <p className="data">{ibu}</p>
+          <p className="data">{ebc}</p>
         </div>
-      </div>
-    </div>
-  </>
-  )
-  const expandInfoJSX = (
-    <div className="beerCard__extra">
-      <h3 className="beerCard__subheading">Food pairings:</h3>
+        <h3 className="beerCard__subheading">Food pairings:</h3>
 
         <ul className="beerCard__food-info">
           {foodPairing.map((pair, index) => {
             return <li key={index}>{pair}</li>
           })}
         </ul>
-
+      </div>
+    </div>
+  </>
+  )
+  const expandInfoJSX = (
+    <div className="beerCard__extra">
         <h3 className="beerCard__description-title">Description:</h3>
         <p className="beerCard__description-text">{description}</p>
       </div>

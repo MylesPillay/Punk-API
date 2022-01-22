@@ -9,11 +9,13 @@
 .app{
     &__container {
     display: block;
+    background-color: $tertiary-color;
     }
     &__header{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        background-color: $secondary-color;
         &__title{
             text-align: center;
             padding: 0.5rem;

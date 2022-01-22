@@ -109,7 +109,6 @@ const App = () => {
      <div className="app__container">
        <header className="app__header">
         <h1 className="header__title"> API For Punks </h1>
-        <img src={BrewDogLogo} alt="dog-logo" className="header__logo"/>
       </header>
        
      <div className="app__main">
