@@ -14,23 +14,16 @@ const BeerCard = ({picture, name, tagLine, date, ph, abv, ibu, ebc, description,
     <div className="beerCard__container">
       <div className="beerCard__tile">
         <img className="beerCard__picture" src={picture} alt={name} />
-        <h2 className="name">{name}</h2>
+        <h2 className="beerCard__name">{name}</h2>
         <h3 className="beerCard__tagLine">{tagLine}</h3>
         <div className="beerCard__data">
-          <p className="data__date">{date}</p>
-          <p className="data">ABV: {abv}</p>
-          <p className="data">pH: {ph}</p>
-          <p className="data">{abv}%</p>
-          <p className="data">{ibu}</p>
-          <p className="data">{ebc}</p>
+          <h4 className="data__date">Date:{date}</h4>
+          <h4 className="data">ABV: {abv}%</h4>
+          <h4 className="data">pH: {ph}</h4>
+          <h4 className="data">IBU (bitterness): {ibu}</h4>
+          <h4 className="data">EBC (colour):{ebc}</h4>
         </div>
-        <h3 className="beerCard__subheading">Food pairings:</h3>
-
-        <ul className="beerCard__food-info">
-          {foodPairing.map((pair, index) => {
-            return <li key={index}>{pair}</li>
-          })}
-        </ul>
+        <h3>Click for description</h3>
       </div>
     </div>
   </>
