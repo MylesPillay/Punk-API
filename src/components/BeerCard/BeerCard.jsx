@@ -17,14 +17,14 @@ const BeerCard = ({picture, name, tagLine, date, ph, abv, ibu, ebc, description}
           <img className="beerCard__picture" src={picture} alt={name} />
         </div>
         <div className="beerCard__tile--information">
-          <h2 className="beerCard__name">{name}</h2>
-          <h3 className="beerCard__tagLine">{tagLine}</h3>
+          <h2 className="beerCard__tile--information name">{name}</h2>
+          <h3 className="beerCard__tile--information-tagLine">{tagLine}</h3>
           <div className="beerCard__data">
-            <h4 className="data__date">Date:{date}</h4>
-            <h4 className="data">ABV: {abv}%</h4>
-            <h4 className="data">pH: {ph}</h4>
-            <h4 className="data">IBU (bitterness): {ibu}</h4>
-            <h4 className="data">EBC (colour):{ebc}</h4>
+            <h4 className="data__date">Date:  {date}</h4>
+            <h4 className="data">ABV:  {abv}%</h4>
+            <h4 className="data">pH:  {ph}</h4>
+            <h4 className="data">IBU (bitterness):  {ibu}</h4>
+            <h4 className="data">EBC (colour):  {ebc}</h4>
           </div>
           </div>
       </div>
