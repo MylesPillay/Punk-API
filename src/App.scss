@@ -29,9 +29,8 @@
     &__main {
         display: flex;
         flex-direction: row;
-        &--nav-sidebar{
+        background-color: $secondary-color;
 
-        }
     }
 
 
@@ -48,8 +47,10 @@
     &__beer-gallery {
         display: flex;
         flex: wrap;
+        
         flex-direction: column;
         width: 25%;
+        
     }
 
 }

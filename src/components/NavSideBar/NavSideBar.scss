@@ -1,17 +1,23 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .nav-bar {
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: $primary-color;
+  }
   &__container {
   background-color: $secondary-color;
-  border-bottom: 2px solid lightgray;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   min-height: none;
-  }
-&__filter-boxes {
-  padding: 0.5rem;
+  margin-right: 1.5rem;
+}
+  &__filter-boxes {
+    padding: 0.5rem;
   }
 }
 
@@ -20,7 +26,7 @@
     min-height: 100vh;
   }
 
-  .nav-bar__filter-boxes {
+  .nav-bar__checkboxes {
     margin: 2rem;
-    }
   }
+}

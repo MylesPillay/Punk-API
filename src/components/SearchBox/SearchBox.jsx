@@ -10,7 +10,7 @@ return (
       type="text" 
       value={searchTerm} 
       onInput={handleInput} 
-      className="search-box__input" 
+      className="searchbox__container--input" 
     />
   </div>
   );

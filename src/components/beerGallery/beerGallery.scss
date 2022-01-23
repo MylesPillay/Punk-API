@@ -5,10 +5,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 75%;
   align-content: right;
   margin-left: 10rem;
   background-color: $tertiary-color;
+  border-radius: 12px;
+  border: solid 7px $primary-color;
+  padding: 0.5rem;
+
+  
+
 }
 
 @media screen and (min-width: 961px) {

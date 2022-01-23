@@ -8,10 +8,10 @@ import FilterBox from "../FilterBox/FilterBox";
 const NavSideBar = ({searchTerm, handleInput, filterFunction}) => {
 
   return (
-    <div classNAme="nav-bar__container">
+    <div className="nav-bar__container">
         
       <nav>
-          <h2 className="navbar__heading">Peruse the Brews</h2>
+          <h2 className="nav-bar__header">Peruse the Brews</h2>
           
           <SearchBox placeholder="Search by product name" 
            searchTerm={searchTerm}  handleInput={handleInput}/>
@@ -19,15 +19,15 @@ const NavSideBar = ({searchTerm, handleInput, filterFunction}) => {
         <section className="nav-bar__filter-boxes">
           <FilterBox
             filterBox={filterFunction}
-            filterLabel="high ABV (>6.0%)"
+            filterLabel="High ABV  (> 6.0%)"
             name="abv"  />
           <FilterBox
             filterBox={filterFunction}
-            filterLabel="classic range"
+            filterLabel="Brewdog Classics"
             name="classic"  />
           <FilterBox
             filterBox={filterFunction}
-            filterLabel="acidic (pH<4)"
+            filterLabel="Acidity    (pH < 4)"
             name="ph"  />
         </section>
       </nav>

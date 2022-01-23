@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.scss";
 import BeerGallery from "./components/BeerGallery/BeerGallery";
 import NavSideBar from "./components/NavSideBar/NavSideBar";
-import BrewDogLogo from "./assets/images/BrewDogLogo.jpeg";
 //import beers from "./data/data";
 
 const App = () => {
