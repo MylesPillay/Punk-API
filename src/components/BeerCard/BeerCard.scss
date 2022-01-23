@@ -33,10 +33,10 @@
   flex-direction: row;
   align-items: center;
   border: $tertiary-color;
-  box-shadow: 0rem 0rem 0.5rem 0.5rem $primary-color;
+  box-shadow: 0rem 0rem 0.5rem 0.5rem $text-color-one;
   padding: 1rem;
   cursor: pointer;
-  background-color: $tertiary-color;
+  background-color: $primary-color;
   color: $quarternary-color;
   border-radius: 12px;
   display: flex;
@@ -54,7 +54,7 @@
   align-items: center;
   grid-gap: 0.5rem;
   gap: 0.5rem;
-  border:  solid 10px $secondary-color;
+  border:  solid 9px $secondary-color;
 
   min-height: 270px;
   max-height: 300px;

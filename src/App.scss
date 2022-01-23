@@ -9,21 +9,19 @@
 .app{
     &__container {
     display: block;
-    background-color: $tertiary-color;
+    background-color: $secondary-color;
     }
     &__header{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         background-color: $secondary-color;
+        margin-left: 14rem;
         &__title{
             text-align: center;
             padding: 0.5rem;
             background-color: $secondary-color;
             color: $primary-color;
-            }
-        &__logo { 
-            justify-content: left;
             }
         }
     &__main {
