@@ -3,7 +3,7 @@
 .beerGallery {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex: wrap;
   justify-content: flex-end;
   align-content: right;
   margin-left: 10rem;
