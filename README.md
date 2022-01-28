@@ -7,3 +7,5 @@ The original brief gave a component tree for basic design reference along with a
 <img width="1280" alt="Screenshot 2022-01-28 at 12 10 45" src="https://user-images.githubusercontent.com/93138467/151544833-69972ee5-1f36-4b04-8f44-79275b166a09.png">
 
 The filter and searchbox function can be used to re-render the page so that it only displays beers which either include the search term, and are filtered depending on the year they were brewed or their alcohol content. This was achieved using different URL end-point provided by the Brewdog API which I investigated using Postman. 
+
+You can view the project by clicking on the following link: <a href="https://mylespillay.github.io/Punk-API/" title="" style="color:#1a0dab;font-size:14px;" >Brewdog API</a> Enjoy! :)
